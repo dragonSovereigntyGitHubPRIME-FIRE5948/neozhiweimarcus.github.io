@@ -1,0 +1,720 @@
+/* Adobe Fonts */
+/* font-family: kokuryu, sans-serif;
+font-style: normal;
+font-weight: 400; */
+
+/* font-family: shinryu, sans-serif;
+font-style: normal;
+font-weight: 400; */
+
+@font-face {
+  font-family: 'Murasaki';
+  src: url('/Fonts/Murasaki.ttf')
+}
+
+@font-face {
+  font-family: 'NeverSettle';
+  src: url('/Fonts/NeverSettle.ttf')
+}
+
+:root {
+  --light: #E3DFDA;
+  --navy: #3E4554;
+  --maroon: #BB462F;
+  --gold: #BE994A;
+}
+
+html {
+  /* body */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  /* text */
+  font-size: 18px;
+  color: black;
+}
+
+body {
+  font-family: kokuryu, sans-serif;
+}
+
+/**********/
+/* Navbar */
+/**********/
+
+/* Navbar */
+#nav-placeholder {
+  background-image: url('/Images/nav-bg.png');
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+#navbar-container {
+  height: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0%;
+}
+
+/* Nav Logo */
+nav .logo-container {
+  display: none;
+  height: 50px;
+  width: 50px;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+/* Nav Items */
+#nav-items {
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nav Link */
+.nav-link {
+  font-family: "NeverSettle", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 35px;
+  margin-right: 35px;
+  /* text-orientation: upright; */
+  /* writing-mode: vertical-rl; */
+  /* transform: rotate(-180deg); */
+  /* transform: scale(-1, 1); */
+  /* text-align: center; */
+}
+
+
+
+
+.section-background {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+}
+
+/*************/
+/* Section 2 */
+/*************/
+.section-2 {
+  background-image: url('/Images/s2-bg.png');
+}
+
+.s2-text {
+  width: 60%;
+  text-align: start;
+  margin-left: 150px;
+}
+
+/*************/
+/* Section 3 */
+/*************/
+.section-3 {
+  background-image: url('/Images/s3-bg.png');
+}
+
+.s3-container {
+  height: 100vh;
+}
+
+.s3-text {}
+
+/*************/
+/* Section 4 */
+/*************/
+.section-4 {
+  background-image: url('/Images/s3-bg.png');
+}
+
+/**********************/
+/* Section - Contact */
+/**********************/
+.section-6 {
+  background-image: url('/Images/contact-bg.png');
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-color: white;
+}
+
+
+
+
+
+
+/* ********** */
+/* Hero */
+/* ********** */
+
+/* text animation - ink bleed */
+.fadein {
+  position: relative;
+  background-color: transparent;
+  filter: contrast(7);
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #020010;
+  margin-top: 20px;
+}
+
+.blurred {
+  font-size: 32pt;
+  position: relative;
+  background: linear-gradient(129deg, #fff 0%, transparent 100%);
+  animation: fadein 4s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.blurred span {
+  font-size: 26pt;
+}
+
+#sakura {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  left: 0%;
+  top: 0%;
+}
+
+
+/* ********** */
+/* 2. Portfolios Page */
+/* ********** */
+.s2-image {
+  width: 100%;
+  height: 80%;
+}
+
+.filter-btn {
+  font-size: 2.5vh;
+  background-color: transparent;
+  border: transparent;
+}
+
+.filter-active {
+  border: 2px var(--navy) solid
+}
+
+
+.portfolio-kanji {
+  width: 80%;
+}
+
+.portfolio {
+  width: 75%;
+}
+
+.portfolio-title {
+  font-size: 3.3vh;
+  color: var(--maroon);
+}
+
+/* .portfolio-desc {
+    width: 90%;
+} */
+
+
+
+
+.portfolios-showcase>p {
+  font-size: 2.5vh;
+  margin-top: 5px;
+}
+
+/* ********** */
+/* 2A. Individual Pages Pages */
+/* ********** */
+
+/* Section 1 */
+.project-img {
+  height: 100%;
+  width: 90%;
+}
+
+.project-title {
+  font-size: 4.5vw;
+}
+
+.project-title-stamp {
+  width: 2.3vw;
+  margin-left: 15px;
+}
+
+.project-subtitle {
+  color: var(--maroon);
+  font-size: 1vw;
+  margin-bottom: -10px;
+}
+
+.project-subtitle-icon {
+  width: 20px;
+}
+
+.project-desc {
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.project-desc-bg {
+  width: 20%;
+  position: absolute;
+  bottom: 26%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.readmore-txt {
+  color: var(--maroon);
+  font-size: 22px;
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-content: center;
+  justify-content: center;
+  /* margin-top: 30px; */
+}
+
+.readmore-txt-icon {
+  height: 22px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+
+/* Section 2 */
+.flower-bulletpoint {
+  height: 7vh;
+}
+
+.project-pg-header {
+  font-size: 9vh;
+  color: var(--maroon);
+}
+
+.case-study {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.case-study-bg {
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.brush-divider-container {
+  position: absolute;
+  left: 47%;
+  top: 13%;
+}
+
+.brush-divider {
+  width: 3.7vh;
+}
+
+
+
+.test {
+  background-color: white;
+}
+
+.test2 {
+  background-color: yellow;
+}
+
+/* ********** */
+/* 4. Contact */
+/* ********** */
+
+.contact-page {
+  /* background-image: url('/Images/index_bg.png'); */
+  color: #BE994A;
+  /* fontsize */
+}
+
+#contact-form {
+  background-image: url('/Images/contact-form-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+  width: 47%;
+  height: 90%;
+}
+
+#contact-form-container {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+}
+
+
+div.btnbg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 0px 15px #ccc;
+}
+
+div.btnbg:hover {
+  text-shadow: 0px 0px 3px #ccc;
+  box-shadow: 0px 0px 20px #ccc;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0.3;
+    filter: blur(20px);
+  }
+
+  /* 40% {
+        opacity:0.7;
+        filter:blur(10px);
+      }         */
+  80% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+#canvas {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+}
+
+#front,
+#canvas {
+  display: none;
+}
+
+
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/lake-696098_1920.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.work {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/forest-208517_1280.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+
+
+
+
+
+.test-splatter {
+  height: 100px;
+}
+
+.test-draw {
+  height: 200px;
+}
+
+
+/* Container */
+.s5-container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal-scroll {
+  position: relative;
+  width: 110%;
+  height: 70vh;
+  overflow-y: hidden;
+}
+
+
+.flex-container {
+  position: absolute;
+
+  height: 90vh;
+  width: 100vw;
+
+  background-color: aqua;
+
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Title */
+.flex-title {
+  color: #f1f1f1;
+  position: relative;
+  font-size: 6vw;
+  margin: auto;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 15%;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-title {
+    transform: rotate(0deg) !important;
+  }
+}
+
+.flex-about {
+  opacity: 0;
+  position: relative;
+  width: 70%;
+  font-size: 2vw;
+  padding: 5%;
+  top: 20%;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  line-height: 1.3;
+  margin: auto;
+  text-align: left;
+  transform: rotate(0deg);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-about {
+    padding: 0%;
+    border: 0px solid #f1f1f1;
+  }
+}
+
+/* Slide */
+.flex-slide {
+  margin-left: 20px;
+
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-slide {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-slide p {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-slide ul li {
+    font-size: 2em;
+  }
+}
+
+.flex-slide:hover {
+  -webkit-flex-grow: 3;
+  flex-grow: 3;
+}
+
+
+
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?crop=entropy&cs=srgb&dl=nature-red-forest-leaves-33109.jpg&fit=crop&fm=jpg&h=853&w=1280);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  .home {
+    -moz-animation: aboutFlexSlide;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-delay: 0s;
+    -webkit-animation: aboutFlexSlide;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 0s;
+    animation: aboutFlexSlide;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+  }
+}
+
+
+
+@keyframes aboutFlexSlide {
+  0% {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
+
+  50% {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+  }
+
+  100% {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-title-home {
+    transform: rotate(90deg);
+    top: 15%;
+    -moz-animation: homeFlextitle;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-delay: 0s;
+    -webkit-animation: homeFlextitle;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 0s;
+    animation: homeFlextitle;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+  }
+}
+
+@keyframes homeFlextitle {
+  0% {
+    transform: rotate(90deg);
+    top: 15%;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    top: 15%;
+  }
+
+  100% {
+    transform: rotate(90deg);
+    top: 15%;
+  }
+}
+
+.flex-about-home {
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-about-home {
+    -moz-animation: flexAboutHome;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-delay: 0s;
+    -webkit-animation: flexAboutHome;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 0s;
+    animation: flexAboutHome;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+  }
+}
+
+@keyframes flexAboutHome {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/714258/pexels-photo-714258.jpeg?crop=entropy&cs=srgb&dl=mountain-ranges-covered-in-snow-714258.jpg&fit=crop&fm=jpg&h=853&w=1280);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1295138/pexels-photo-1295138.jpeg?crop=entropy&cs=srgb&dl=ocean-water-wave-photo-1295138.jpg&fit=crop&fm=jpg&h=720&w=1280);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.price {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/235807/pexels-photo-235807.jpeg?crop=entropy&cs=srgb&dl=abstract-active-ash-color-235807.jpg&fit=crop&fm=jpg&h=853&w=1280);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
